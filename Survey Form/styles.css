@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #f3f3f3;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  background: #1b1b32;
+  background-image: linear-gradient(
+      115deg,
+      rgba(32, 63, 140, 0.9),
+      rgba(100, 138, 185, 0.8)
+    ),
+    url(https://africa-energy-portal.org/sites/default/files/2019-11/power-image-v2-1024x682.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 100%;
+  margin: 32px auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+h1 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 22px;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+form {
+  background: rgba(33, 46, 73, 0.8);
+  padding: 40px 10px;
+  border-radius: 7px;
+  margin-top: 25px;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 40px;
+  }
+}
+
+.form-group {
+  margin: 0 auto 20px auto;
+  padding: 4px;
+  font-size: 18px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 9px;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.clue {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #eee;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 12px;
+  resize: vertical;
+  border-radius: 5px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #37af65;
+  color: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.submit-button:hover {
+  background: green;
+}

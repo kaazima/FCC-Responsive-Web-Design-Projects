@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="./styles.css" />
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Access to Electricity Survey Form</h1>
+    <p id="description" class="text-center">Thank you for taking the time to help us improve our service</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input type="number" name="age" id="number" min="15" max="100" placeholder="Age" class="form-control" />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current area?</p>
+      <select id="dropdown" name="area" class="form-control" required>
+        <option disabled selected value>Select your area</option>
+        <option value="urban">Urban</option>
+        <option value="sub-urban">Sub-urban</option>
+        <option value="rural">Rural</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>How many days in a week do you face Power-cut?</p>
+      <label>
+        <input name="power-cut" value="never" type="radio" class="input-radio" checked />No Power-cut at all
+      </label>
+      <label>
+        <input name="power-cut" value="1-2" type="radio" class="input-radio" />1-2 Days
+      </label>
+      <label>
+        <input name="power-cut" value="3-5" type="radio" class="input-radio" />3-5 Days
+      </label>
+    </div>
+    <div class="form-group">
+      <p>
+        What support options have you used?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      <label><input name="prefer" value="Document" type="checkbox" class="input-checkbox" />Documentation</label>
+      <label><input name="prefer" value="Email" type="checkbox" class="input-checkbox" />Email</label>
+      <label><input name="prefer" value="Chat" type="checkbox" class="input-checkbox" />Chat</label>
+      <label><input name="prefer" value="Phone" type="checkbox" class="input-checkbox" />Phone</label>
+    </div>
+    <div class="form-group">
+      <p>How satisfied are you with your Customer service experience?</p>
+      <select id="satisfaction" name="satisfaction" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="v-satisfy">Very satisfied</option>
+        <option value="s-satisfy">Slightly satisfied</option>
+        <option value="neutral">Neutral</option>
+        <option value="s-dissatisfy">Slightly dissatisfied</option>
+        <option value="v-dissatisfy">Very dissatisfied</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Please feel free to share your comments or suggestions!!!</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,433 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  
+  <body>
+    <nav id="navbar">
+  
+      <div class="head">
+        <form class="search" role="search">
+          <i class="fa fa-search"></i>
+          <input type="search" placeholder="Search...">
+        </form>
+      </div>
+  
+      <header class="header">
+        <a href="#CSS" style="font-size:38px"><i class="fa fa-css3" style="font-size:36px"></i> CSS </a>
+        <div class="side-nav">
+          <ul>
+  
+            <li>
+              <i class="fa fa-caret-right dropdown-btn"><a href="#Introduction" class="nav-link"> Introduction</a></i>
+              <div class="dropdown-container">
+                <a class="nav-link" href="#What_is_CSS?">What is CSS?</a>
+                <a class="nav-link" href="#Why_use_CSS?">Why use CSS?</a>
+                <a class="nav-link" href="#CSS_Syntax">CSS Syntax</a>
+                <a class="nav-link" href="#CSS_Comments">CSS Comments</a>
+              </div>
+            </li>
+  
+            <li>
+              <i class="fa fa-caret-right dropdown-btn"><a class="nav-link" href="#CSS_Colors"> CSS Colors</a></i>
+              <div class="dropdown-container">
+                <a href="#Background_Color">Background color</a>
+                <a href="#Text_color">Text color</a>
+                <a href="#Border_Color">Border color</a>
+                <a href="#Color_Values">Color values</a>
+              </div>
+            </li>
+  
+            <li>
+              <i class="fa fa-caret-right dropdown-btn"><a class="nav-link" href="#CSS_Backgrounds"> CSS Backgrounds</a></i>
+              <div class="dropdown-container">
+                <a href="#Background_color">Background color</a>
+                <a href="#Background_image">Background image</a>
+                <a href="#Background_repeat">Background repeat</a>
+                <a href="#Opacity">Opacity</a>
+              </div>
+            </li>
+  
+            <li>
+              <i class="fa fa-caret-right dropdown-btn"><a class="nav-link" href="#CSS_Borders"> CSS Borders</a></i>
+              <div class="dropdown-container">
+                <a href="#Border_color">Border color</a>
+                <a href="#Border_Style">Border style</a>
+                <a href="#Rounded_Borders">Rounded borders</a>
+              </div>
+            </li>
+  
+            <li>
+              <i class="fa fa-caret-right dropdown-btn"><a class="nav-link" href="#CSS_Text"> CSS Text</a></i>
+              <div class="dropdown-container">
+                <a href="#Text_Color">Text color</a>
+                <a href="#Text_Decoration">Text decoration</a>
+                <a href="#Text_Transformation">Text transformation</a>
+                <a href="#Letter_Spacing">Letter spacing</a>
+                <a href="#Line_Height">Line height</a>
+              </div>
+            </li>
+  
+            <li>
+              <i class="fa fa-caret-right dropdown-btn"><a class="nav-link" href="#CSS_Fonts"> CSS Fonts</a></i>
+              <div class="dropdown-container">
+                <a href="#Font_Family">Font family</a>
+                <a href="#Font_Weight">Font weight</a>
+                <a href="#Font_Style">Font style</a>
+                <a href="#Font_Size">Font size</a>
+              </div>
+            </li>
+  
+          </ul>
+        </div>
+      </header>
+    </nav>
+  
+    <main id="main-doc">
+  
+      <section id="CSS">
+        <h1>CSS</h1>
+      </section>
+  
+      <!-- Introduction section -->
+      <section class="main-section" id="Introduction">
+        <header>
+          <div class="title">
+            <span class="line"></span>
+            <h2>Introduction</h2>
+          </div>
+        </header>
+        <ul>
+          <li id="What_is_CSS?">
+            <h3>What is CSS?</h3>
+            <p>Like HTML, CSS is not really a programming language. It is not a mark-up language either ! CSS is a stylesheet language.</p>
+            <ul>
+              <li>CSS stands for Cascading Style Sheets.</li>
+              <li>It describes how HTML elements are to be displayed on screen, paper, or in other media.</li>
+            </ul>
+          </li>
+          <li id="Why_use_CSS?">
+            <h3>Why use CSS?</h3>
+            <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+            <p>HTML was created to describe the content of a web page. When tags like font, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+            <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS. CSS removed the style formatting from the HTML page! </p>
+            <p>Thus, CSS Saves a Lot of Work!</p>
+          </li>
+          <li id="CSS_Syntax">
+            <h3>CSS Syntax</h3>
+            <p>A CSS rule-set consists of a selector and a declaration block. The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon. A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+            <code>
+              p {<br />
+              color: red;<br />
+              text-align: center;<br />
+              }
+            </code>
+            <p>In the above example, </p>
+            <i class="fa fa-long-arrow-right"> <i>p</i> is a selector in CSS.</i><br />
+            <i class="fa fa-long-arrow-right"> <i>color</i> is a property, and <i>red</i> is the property value.</i><br />
+            <i class="fa fa-long-arrow-right"> <i>text-align</i> is a property, and <i>center</i> is the property value.</i><br /><br />
+          </li>
+          <li id="CSS_Comments">
+            <h3>CSS Comments</h3>
+            <p>Comments are used to explain the code, and may help when you edit the source code at a later date. Comments are ignored by browsers. A CSS comment starts with /* and ends with */</p>
+            <code>
+              /*This is a single line comment*/<br />
+              p {<br />
+              color: red;<br />
+              }<br />
+              <br />
+              /*This is<br />
+              a multi-line comment*/<br />
+              h1 {<br />
+              color:blue;<br />
+              }<br />
+            </code>
+            <br />
+          </li>
+        </ul>
+      </section>
+  
+      <!-- CSS Colors Section -->
+      <section class="main-section" id="CSS_Colors">
+        <header>
+          <div class="title">
+            <span class="line"></span>
+            <h2>CSS Colors</h2>
+          </div>
+        </header>
+        <ul>
+  
+          <li id="Background_Color">
+            <h3>Background Color</h3>
+            <p>The <i>background-color</i> property sets the background color of an element. The background of an element is the total size of the element, including padding and border (but not the margin).</p>
+            <p>Different property values that can be used for background-color are :
+            <ul>
+              <li>color</li>
+              <li>transparent</li>
+              <li>initial</li>
+              <li>inherit</li>
+            </ul>
+            </p>
+            <p><i>Note: </i>Use a background color that makes the text easy to read.</p>
+          </li>
+  
+          <li id="Text_color">
+            <h3>Text Color</h3>
+            <p>The <i>color</i> property is used to set the color of the text. The default text color for a page is defined in the body selector.</p>
+            <code>
+              h1 {<br />
+              /*Background Color*/<br />
+              background-color: black;<br /><br />
+              /*Text Color*/<br />
+              color: white;<br />
+              }<br />
+            </code>
+          </li>
+  
+          <li id="Border_Color">
+            <h3>Border Color</h3>
+            <p>The <i>border-color</i> property sets the color of an element's four borders. An element must have borders before you can change the color. This property can have one to four values.</p>
+            <code>
+              /*Top, right, bottom and left borders are set to coral*/<br /><br />
+              div {<br />
+              border-color: coral;<br />
+              }<br /><br />
+              /*top,bottom borders are set to blue & right,left borders are set to black*/<br /><br />
+              h3 {<br />
+              border-color: blue black;<br />
+              }<br />
+            </code>
+          </li>
+  
+          <li id="Color_Values">
+            <h3>Color Values</h3>
+            <p>Colors in CSS can be specified by the following methods:
+            <ul>
+              <li><i>Hexadecimal colors: </i>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.</li><br />
+              <li><i>RGB colors: </i>An RGB color value is specified with the rgb() function. Each parameter (red, green, and blue) defines the intensity of the color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%).</li><br />
+              <li><i>RGBA colors: </i>RGBA color values are an extension of RGB color values with an alpha channel, which specifies the opacity of the object. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</li><br />
+              <li><i>HSL colors: </i>HSL stands for hue, saturation, and lightness and represents a cylindrical-coordinate representation of colors. Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. Saturation is a percentage value; 0% means a shade of gray and 100% is the full color. Lightness is also a percentage; 0% is black, 100% is white.</li><br />
+              <li><i>HSLA colors: </i>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity of the object.</li><br />
+              <li><i>Predefined color names: </i>140 color names are predefined in the HTML and CSS color specification. A list of all predefined names can be found <a class="link" href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">here</a>.</li><br />
+            </ul>
+            </p>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- CSS Backgrounds Section -->
+      <section class="main-section" id="CSS_Backgrounds">
+        <header>
+          <div class="title">
+            <span class="line"></span>
+            <h2>CSS Backgrounds</h2>
+        </header>
+        </div>
+        <ul>
+          <li id="Background_color">
+            <h3>Background color</h3>
+            <p>The <i>background-color</i> property sets the background color of an element. The background of an element is the total size of the element, including padding and border (but not the margin).</p>
+            <p><i>Note: </i>Use a background color that makes the text easy to read.</p>
+          </li>
+  
+          <li id="Background_image">
+            <h3>Background image</h3>
+            <p>The <i>background-image</i> property specifies an image to use as the background of an element. By default, the image is repeated so it covers the entire element.</p>
+            <code>
+              body {<br />
+              background-image: url("paper.jpg");<br />
+              }<br />
+            </code>
+          </li>
+  
+          <li id="Background_repeat">
+            <h3>Background repeat</h3>
+            <p>By default, the <i>background-image</i> property repeats an image both horizontally and vertically. Some images should be repeated only horizontally or vertically, or they will look strange.
+            <ul>
+              <li>To repeat an image vertically, set "background-repeat: repeat-y;"</li>
+              <li>To repeat an image horizontally, set "background-repeat: repeat-x;"</li>
+            </ul>
+            </p>
+          </li>
+  
+          <li id="Opacity">
+            <h3>Opacity</h3>
+            <p>The <i>opacity</i> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. Lower the value, higher the transparency.</p>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- CSS Borders Section -->
+      <section class="main-section" id="CSS_Borders">
+        <header>
+          <div class="title">
+            <span class="line"></span>
+            <h2>CSS Borders</h2>
+          </div>
+        </header>
+        <ul>
+          <li id="Border_color">
+            <h3>Border Color</h3>
+            <p>The CSS <i>border</i> properties allow you to specify the style, width, and color of an element's border.</p>
+            <p>The <i>border-color</i> property sets the color of an element's four borders. An element must have borders before you can change the color. This property can have one to four values.</p>
+            <code>
+              /*Top, right, bottom and left borders are set to yellow*/<br /><br />
+              div {<br />
+              border-color: yellow;<br />
+              }<br /><br />
+              /*top border is set to blue, right,left borders to green & bottom border to red*/<br /><br />
+              h3 {<br />
+              border-color: blue green red;<br />
+              }<br />
+            </code>
+          </li>
+  
+          <li id="Border_Style">
+            <h3>Border Style</h3>
+            <p>The <i>border-style</i> property specifies what kind of border to display. It can have one to four values (for the top border, right border, bottom border, and the left border). The values can be dotted, dashed, solid, double, groove, ridge, inset, outset, none and hidden.</p>
+            <p><i>Note: </i>None of the other CSS border properties will have ANY effect unless the border-style property is set!</p>
+          </li>
+  
+          <li id="Rounded_Borders">
+            <h3>Rounded Borders</h3>
+            <p>The <i>border-radius</i> property is used to add rounded borders to an element:</p>
+            <code>
+              p {<br />
+              border: 2px solid black;<br />
+              border-radius:6px;<br />
+              }<br />
+            </code>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- CSS Text Section -->
+      <section class="main-section" id="CSS_Text">
+        <header>
+          <div class="title">
+            <span class="line"></span>
+            <h2>CSS Text</h2>
+          </div>
+        </header>
+        <ul>
+          <li id="Text_Color">
+            <h3>Text Color</h3>
+            <p>The <i>color</i> property is used to set the color of the text. The default text color for a page is defined in the body selector.</p>
+            <code>
+              h1 {<br />
+              color: white; /*Text Color*/<br />
+              }<br />
+            </code>
+          </li>
+  
+          <li id="Text_Decoration">
+            <h3>Text Decoration</h3>
+            <p>The <i>text-decoration</i> property is used to set or remove decorations from text. The value "text-decoration: none;" is often used to remove underlines from links.</p>
+            <p>The other text-decoration values that are used to decorate text are:
+            <ul>
+              <li>overline</li>
+              <li>line-through</li>
+              <li>underline</li>
+            </ul>
+            </p>
+            <p><i>Note: </i>It is not recommended to underline text that is not a link, as this often confuses the reader.</p>
+          </li>
+  
+          <li id="Text_Transformation">
+            <h3>Text Transformation</h3>
+            <p>The <i>text-transform</i> property is used to specify uppercase and lowercase letters in a text. It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word</p>
+            <code>
+              p.uppercase {<br />
+              text-transform: uppercase;<br />
+              }
+            </code>
+          </li>
+  
+          <li id="Letter_Spacing">
+            <h3>Letter Spacing</h3>
+            <p>The <i>letter-spacing</i> property is used to specify the space between the characters in a text.</p>
+          </li>
+  
+          <li id="Line_Height">
+            <h3>Line Height</h3>
+            <p>The <i>line-height</i> property is used to specify the space between lines.</p>
+            <code>
+              p.big {<br />
+              line-height: 1.8;<br />
+              }
+            </code>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- CSS Fonts Section -->
+      <section class="main-section" id="CSS_Fonts">
+        <header>
+          <div class="title">
+            <span class="line"></span>
+            <h2>CSS Fonts</h2>
+          </div>
+        </header>
+        <ul>
+          <li id="Font_Family">
+            <h3>Font Family</h3>
+            <p>In CSS, there are two types of font family names:
+            <ul>
+              <li>Generic family :- A group of font families with a similar look.</li>
+              <li>Font family :- A specific font family</li>
+            </ul>
+            </p>
+            <p>The font family of a text is set with the <i>font-family</i> property.It should hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font, and so on. </p>
+            <p><i>Note: </i>If the name of a font family is more than one word, it must be in quotation marks, like "Times New Roman".</p>
+          </li>
+  
+          <li id="Font_Weight">
+            <h3>Font Weight</h3>
+            <p>The <i>font-weight</i> property sets how thick or thin characters in text should be displayed. It specifies the weight of a font.</p>
+            <p>The possible property values are:
+            <ul>
+              <li>normal</li>
+              <li>bold</li>
+              <li>initial</li>
+              <li>inherit</li>
+              <li>100-900 (Defines from thin to thick characters)</li>
+            </ul>
+            </p>
+          </li>
+  
+          <li id="Font_Style">
+            <h3>Font Style</h3>
+            <p>The <i>font-style</i> property is mostly used to specify italic text. The three property values are normal, italic and oblique (Here, the text is leaning).</p>
+            <code>
+              h3 {<br />
+              font-style: italic;<br />
+              }
+            </code>
+          </li>
+  
+          <li id="Font_Size">
+            <h3>Font Size</h3>
+            <p>The <i>font-size</i> property sets the size of the text. Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs. The font-size can be an absolute, or relative value.</p>
+            <p>
+            <ul>
+              <li>Setting the text size with pixels gives you full control over the text size.</li><br />
+              <li>To allow users to resize the text (in the browser menu), many developers use em instead of pixels. 1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.</li><br />
+              <li>The solution that works in all browsers is to use a combination of percent and em, i.e., to set a default font-size in percent for the <i>body</i> element.</li><br />
+            </ul>
+            </p>
+            <code>
+              h1 {<br />
+              font-size: 10vw; /*1vw = 1% of viewport width*/<br />
+              }
+            </code>
+          </li>
+        </ul><br />
+      </section>
+  
+      <section class="refer">
+        <h3>References:</h3>
+        <p>All the documentation on this page is taken from <a class="link" target="_blank" href="https://www.w3schools.com/css/default.asp">here</a>.</p>
+      </section>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>

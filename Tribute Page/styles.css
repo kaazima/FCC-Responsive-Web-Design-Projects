@@ -1,0 +1,63 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+  }
+  
+  #main {
+    margin: 30px 8px;
+    padding: 10px;
+    border-radius: 25px;
+    background: #eee;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  
+  ul {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  li {
+    margin: 15px 0;
+  }
+  
+  a {
+    color: #113ca7;
+  }
+  
+  a:visited {
+    color: #74638f;
+  }
+  
+  blockquote {
+    font-style: italic;
+    margin: 0 auto 50px auto;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 60%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-div {
+    background: white;
+    padding: 10px;
+    margin: 0 25px;
+    border-radius: 10px;
+  }
+  
+  #img-caption {
+    margin: 15px 0 5px 0;
+  }
+  
